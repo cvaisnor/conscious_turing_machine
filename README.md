@@ -1,10 +1,15 @@
-# Introduction
+# Introduction (Work in Progress)
 
 This a toy implementation of Lenore and Manuel Blum's model from the paper: [Theory of Consciousness from a Theoretical Computer Science Perspective: Insights from the Conscious Turing Machine](https://arxiv.org/abs/2107.13704).
 
 The proposed model is based off the Global (Neuronal) Workspace Theory of Consciousness, with several modifications.
 
-## Vocabulary and Terms of Interest:
+## Vocabulary:
+
+### CTM Message Definition
+- The message that each process node creates is a tuple of the form (address, time-step, value). The address is the unique identifier of the node, the time-step is the time at which the message was created, and the value is the value of the message.
+
+![Image](imgs/message.png)
 
 ### Stage 
 - Short Term Memory (STM): This is the stage in Baar's model of conciousness where information is stored for a short period of time. This is the equivalent of the working memory in the CTM model. 
@@ -22,5 +27,4 @@ The proposed model is based off the Global (Neuronal) Workspace Theory of Consci
 ### The Down-Tree
 - This is a simple connection from the stage back to all the nodes in the network.
 
-### CTM Message Definition
-- The message that each process node creates is a tuple of the form (address, time-step, value). The address is the unique identifier of the node, the time-step is the time at which the message was created, and the value is the value of the message.
+![Image](imgs/GWT_vs_CTM.png)
